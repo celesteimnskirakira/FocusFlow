@@ -1,0 +1,145 @@
+/* Body Outlook */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    width: 300px;
+    padding: 10px;
+    background-color: #f4f7f6;
+}
+
+/* Container Outlook */
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+p {
+    font-size: 0.5em;
+    color: #555;
+}
+
+/* Input field style */
+#PurposeInput {
+    width: 90%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+/* Button Outlook */
+#submit-btn {
+    width: 95%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #fa0808;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Button hover effect */
+#submit-btn:hover {
+    background-color: #b30000;
+}
+
+/* Keyword Section */
+.keyword-section {
+    margin-top: 20px;
+    padding: 15px 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.keyword-prompt {
+    font-size: 0.9em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+/* Keyword Bubbles Container */
+.keyword-bubbles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+/* Individual Keyword Bubble */
+.keyword-bubble {
+    padding: 8px 15px;
+    background-color: #ffebee;
+    color: #d32f2f;
+    border: 2px solid #ffcdd2;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.85em;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.keyword-bubble:hover {
+    background-color: #ffcdd2;
+    border-color: #ef5350;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 6px rgba(211, 47, 47, 0.3);
+}
+
+/* Selected state */
+.keyword-bubble.selected {
+    background-color: #fa0808;
+    color: white;
+    border-color: #fa0808;
+}
+
+/* Confirm Button */
+.confirm-btn {
+    width: 95%;
+    padding: 10px;
+    background-color: #fa0808;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.confirm-btn:hover {
+    background-color: #b30000;
+}
+
+.confirm-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Loader */
+.loader {
+    display: none;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #db3434;
+    animation: spin 1s ease-in-out infinite;
+    margin: 10px auto 0;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

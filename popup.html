@@ -1,0 +1,34 @@
+<!--popup.html-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FocusFlow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>FocusFlow</h1>
+        <p>Help you make your learning path pure and efficient on YouTube.</p>
+        <input type="text" id="PurposeInput" placeholder=" What do you want to learn?">
+        <button id="submit-btn">Start</button>
+
+        <!-- Keyword bubble container (hidden by default) -->
+        <div id="keywordSection" class="keyword-section" style="display: none;">
+            <p class="keyword-prompt">AI recommended keywords:</p>
+            <div id="keywordBubbles" class="keyword-bubbles"></div>
+            <button id="confirm-btn" class="confirm-btn">Confirm</button>
+        </div>
+
+        <div class="loader" id="loadingSpinner"></div>
+    </div>
+    <div id="status"></div>
+
+    <script src="popup.js"></script>
+
+</body>
+
+</html>

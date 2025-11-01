@@ -1,0 +1,45 @@
+{
+    "manifest_version": 3,
+    "name": "FocusFlow",
+    "version": "1.0",
+    "description": "Help you make your learning path pure and efficient on YouTube.",
+    "permissions": [
+        "storage",
+        "tabs",
+        "scripting"
+    ],
+    "host_permissions": [
+        "*://*.youtube.com/*"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
+        }
+    },
+    "background": {
+        "service_worker": "service-worker.js",
+        "type": "module"
+    },
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.youtube.com/results*",
+                "https://www.youtube.com/watch*"
+            ],
+            "js": [
+                "content-script.js"
+            ],
+            "css": [
+                "content-style.css"
+            ]
+        }
+    ]
+}
