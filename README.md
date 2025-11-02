@@ -2,7 +2,7 @@
 
 A Chrome browser extension designed to help you make your learning path pure and efficient on YouTube by filtering distractions and providing Prerequisite Knowledge insights.
 
-## Inspiration
+## 💡 Inspiration
 Imagine encountering a question while studying, opening a video only to realise halfway through that you need additional knowledge to comprehend it. 
 By then, you've already wasted time opening the video, watching advertisements, and struggling to grasp the first half. 
 FocusFlow was born to address this – its name derived from ‘flow state’ – helping everyone concentrate on their learning objectives while minimising wasted or distracted time.
@@ -234,4 +234,5 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📧 Contact
 For questions or support, please open an issue on GitHub.
-Email: RUNZHI001@e.ntu.edu.sg
+
+Email: nongrunzhi@gmail.com
